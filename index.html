@@ -334,3 +334,66 @@ Update user information in tomcat-users.xml
  vim /etc/sudoers
  se sn
  /usr/bin/passwd
+ create
+upload objects
+click the file -> object url -> paste -> access denied
+inside obects -> permission -> can see permissions -> but cant edit
+inside buckets -> go to made one -> permissions -> under acl -> bucket owner enforced  -> select hyperlink -> enable ACLs 
+inside objects -> permission -> can see permissions -> can edit -> 
+
+should upload through machines
+can access aws s3 in cross platform.
+
+make an instance in other region
+connect ssh
+cat /etc/os-release
+df -h
+
+go to iam
+create user
+attach policies directly
+aws s3 all policies
+go inside user
+security creds
+create access key
+cli
+create access key
+download .csv file
+save
+
+go to terminal
+install aws cli
+copy from google docs
+curl https --- 3 lines
+aws configureI am user process in CLI:
+1  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+    2  unzip awscliv2.zip
+    3  sudo ./aws/install
+    4  aws configure
+    5  ls -a
+    6  cd .aws/
+    7  ll
+    8  cat config
+    9  cat credentials
+   10  cd
+   11  sudo yum install automake fuse fuse-devel gcc-c++ git libcurl-devel libxml2-devel make openssl-devel
+   12  git clone https://github.com/s3fs-fuse/s3fs-fuse.git
+   13  cd s3fs-fuse/
+   14  ll
+   15  ./autogen.sh
+   16  ./configure --prefix=/usr --with-openssl
+   17  make
+   18  sudo make install
+   19  cd
+   20  which s3fs
+   21  touch /etc/passwd-s3fs
+   22  ll -d /etc/passwd-s3fs
+   23  chmod 640 /etc/passwd-s3fs
+   24  ll -d /etc/passwd-s3fs
+   25  vim /etc/passwd-s3fs
+   26  s3fs {Enter your bucket name -- No Braces required} /mnt -o passwd_file=/etc/passwd-s3fs
+   27  df -h
+   28  cd /mnt/
+   29  ll
+   30  touch sush.txt{1..10}
+   31  history
